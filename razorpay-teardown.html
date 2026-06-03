@@ -729,6 +729,157 @@ h1{animation-delay:.2s}
   </div>
 </div>
 
+<!-- 09 ROADMAP -->
+<div class="block reveal">
+  <div class="blabel">Product roadmap <span class="bnum">09</span></div>
+  <h2>A phased path from payment tool to merchant OS</h2>
+  <p>This roadmap is not a feature wishlist. It is a sequence of bets — each phase de-risks the next, and each one builds on Razorpay's existing moats rather than requiring new ones to be invented. The window is real but narrow: Dukaan is adding AI features, Shopify is deepening India investment, and Instamojo continues to iterate. The merchant who solves storefront setup in the next 12 months owns the SME relationship for the next five years.</p>
+
+  <!-- Why now -->
+  <div style="margin:2rem 0 1rem">
+    <div style="font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-lt);margin-bottom:1rem">Why the window is narrow</div>
+    <div class="m3" style="grid-template-columns:repeat(2,1fr)">
+      <div class="mc" style="border-left:3px solid var(--amber)">
+        <div class="mc-l" style="color:var(--amber)">Competitive threat</div>
+        <div class="mc-v">Dukaan is shipping AI store creation for Indian SMEs. First-mover in this category captures the merchant habit before Razorpay enters.</div>
+      </div>
+      <div class="mc" style="border-left:3px solid var(--amber)">
+        <div class="mc-l" style="color:var(--amber)">Shopify India push</div>
+        <div class="mc-v">Shopify is reducing friction for Indian merchants and exploring local payment partnerships. A direct Shopify-UPI integration removes Razorpay from the stack entirely.</div>
+      </div>
+      <div class="mc" style="border-left:3px solid var(--green)">
+        <div class="mc-l" style="color:var(--green)">Internal opportunity</div>
+        <div class="mc-v">10M+ merchants already on Razorpay with no storefront. That is uncaptured GMV sitting inside the existing merchant base — no acquisition cost required.</div>
+      </div>
+      <div class="mc" style="border-left:3px solid var(--green)">
+        <div class="mc-l" style="color:var(--green)">Network at critical mass</div>
+        <div class="mc-v">40 crore consumers with saved Magic Checkout details. This trust network is only valuable if it surfaces at the storefront. Every month without a storefront layer is a month that moat goes unused.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Phase 1 -->
+  <div style="margin-top:2rem">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:1rem">
+      <div style="background:var(--rzp-blue-lt);color:var(--rzp-navy);font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;border-radius:20px">Phase 1 · 0–3 months</div>
+      <div style="font-size:12.5px;font-weight:400;color:var(--ink-lt)">Fix the floor — low complexity, high signal</div>
+    </div>
+    <div class="opp-list">
+      <div class="opp-item">
+        <div class="opp-n-col"><div class="opp-n">1</div></div>
+        <div class="opp-body">
+          <div class="opp-t">Defer compliance gates — let merchants preview before KYC</div>
+          <div class="opp-d">Currently a new merchant cannot see what their Payment Page looks like without first submitting GST, PAN, and bank account. Shopify and Wix both allow a full store preview before any compliance step. Allow merchants to build and preview their page first — defer KYC to the moment they want to go live. Estimated impact: 20–30% improvement in onboarding completion rate based on SaaS benchmarks for deferred-commitment flows.</div>
+        </div>
+      </div>
+      <div class="opp-item">
+        <div class="opp-n-col"><div class="opp-n">2</div></div>
+        <div class="opp-body">
+          <div class="opp-t">Surface Magic Checkout trust signal at the storefront</div>
+          <div class="opp-d">When a buyer with saved Razorpay details lands on a Payment Page, show a persistent badge: "Your details are saved — check out in one tap." This converts checkout-layer trust into storefront confidence before the purchase decision is made. Low engineering complexity — the user recognition already exists in the Magic Checkout system. This is the highest-leverage, lowest-effort change available.</div>
+        </div>
+      </div>
+      <div class="opp-item">
+        <div class="opp-n-col"><div class="opp-n">3</div></div>
+        <div class="opp-body">
+          <div class="opp-t">Mobile-first UX audit on low-end Android devices</div>
+          <div class="opp-d">Tier 2/3 merchants — the stated strategic focus — primarily operate on Android devices under ₹12,000. The current Payment Pages setup flow has not been publicly validated on this hardware tier. A structured usability study with 8–10 merchants in this segment would surface the friction points that aggregate review data cannot. This is discovery work, not a shipped feature, but it informs everything that follows.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Phase 2 -->
+  <div style="margin-top:2rem">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:1rem">
+      <div style="background:rgba(13,148,251,0.12);color:var(--rzp-blue);font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;border-radius:20px">Phase 2 · 3–9 months</div>
+      <div style="font-size:12.5px;font-weight:400;color:var(--ink-lt)">Ship AI setup — the core bet</div>
+    </div>
+    <div class="opp-list">
+      <div class="opp-item">
+        <div class="opp-n-col"><div class="opp-n">4</div></div>
+        <div class="opp-body">
+          <div class="opp-t">Prompt-to-storefront: describe your store, AI builds it</div>
+          <div class="opp-d">A merchant types or speaks two sentences — what they sell, who their customers are, what price range. Razorpay generates a complete Payment Page: brand colours, product description copy, homepage headline, and category structure. Magic Checkout embedded by default. Vernacular support from day one — Hindi, Tamil, Telugu. This is exactly what Shopify Magic has shipped globally. The India-native, UPI-first version of it remains unbuilt. Razorpay is the only player with the merchant trust and consumer network to win this.</div>
+        </div>
+      </div>
+      <div class="opp-item">
+        <div class="opp-n-col"><div class="opp-n">5</div></div>
+        <div class="opp-body">
+          <div class="opp-t">WhatsApp catalogue sync — extend, don't replace</div>
+          <div class="opp-d">78% of Indian SMBs already sell through WhatsApp Business. A Payment Page that auto-syncs to a seller's WhatsApp catalogue — and generates a shareable payment link per product — removes the biggest adoption barrier: sellers do not need to rebuild their catalogue, they extend it. The key insight is that WhatsApp is not a competitor to Payment Pages. It is the distribution channel. Razorpay can own both the store and the share link.</div>
+        </div>
+      </div>
+      <div class="opp-item">
+        <div class="opp-n-col"><div class="opp-n">6</div></div>
+        <div class="opp-body">
+          <div class="opp-t">Razorpay-powered checkout as a differentiation signal</div>
+          <div class="opp-d">AI-generated pages should default to displaying the Magic Checkout badge prominently — not as a UI detail but as a conversion argument. "Checkout in one tap for 40 crore+ shoppers" is a genuine competitive moat that no India-native competitor can replicate. Position it as a feature of the storefront, not just the payment step.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Phase 3 -->
+  <div style="margin-top:2rem">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:1rem">
+      <div style="background:rgba(14,110,66,0.1);color:var(--green);font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;border-radius:20px">Phase 3 · 9–18 months</div>
+      <div style="font-size:12.5px;font-weight:400;color:var(--ink-lt)">Own the merchant relationship — the moat play</div>
+    </div>
+    <div class="opp-list">
+      <div class="opp-item">
+        <div class="opp-n-col"><div class="opp-n">7</div></div>
+        <div class="opp-body">
+          <div class="opp-t">Merchant analytics: who is buying, when, and from where</div>
+          <div class="opp-d">A merchant using Payment Pages currently gets settlement data. They do not get buyer behaviour data — repeat purchase rate, top-selling SKUs, peak order times, geographic spread of buyers. This data already exists inside Razorpay's transaction layer. Surfacing it as a merchant dashboard inside Payment Pages creates a reason to stay that has nothing to do with the storefront UI itself. The data moat compounds over time.</div>
+        </div>
+      </div>
+      <div class="opp-item">
+        <div class="opp-n-col"><div class="opp-n">8</div></div>
+        <div class="opp-body">
+          <div class="opp-t">Working capital offers triggered by storefront GMV</div>
+          <div class="opp-d">A merchant whose storefront is generating ₹5L/month in GMV through Razorpay is a creditworthy borrower with verified revenue data. Razorpay Capital already exists. The storefront layer makes the offer timing obvious — trigger a working capital pre-approval at GMV milestones (₹1L, ₹5L, ₹10L). This is the clearest path from "Payment Pages is a feature" to "Payment Pages is the entry point to a financial OS." The storefront becomes the relationship, not just the transaction.</div>
+        </div>
+      </div>
+      <div class="opp-item">
+        <div class="opp-n-col"><div class="opp-n">9</div></div>
+        <div class="opp-body">
+          <div class="opp-t">Inventory and order management — reduce the tab count</div>
+          <div class="opp-d">A merchant running their business today has Payment Pages open in one tab, a WhatsApp Business window in another, a Google Sheet for inventory in a third, and a separate screen for settlements. The long-term product vision is that all of these collapse into one Razorpay storefront interface. Inventory sync and basic order management — even a simple sold/available toggle per SKU — eliminates the biggest operational complaint of SME sellers: context switching across too many tools.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Risks -->
+  <div style="margin-top:2.5rem">
+    <div style="font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-lt);margin-bottom:1rem">Key risks and assumptions</div>
+    <div class="opp-list">
+      <div class="opp-item">
+        <div class="opp-n-col" style="min-width:2.5rem"><div class="opp-n" style="background:var(--red-lt);color:var(--red)">!</div></div>
+        <div class="opp-body">
+          <div class="opp-t">Merchants may not engage with storefronts if payment links work fine</div>
+          <div class="opp-d">The biggest assumption underlying this roadmap is that SME merchants want a storefront, not just a payment link. This is not proven. Phase 1 discovery work and the deferred-KYC experiment are designed to test this assumption before Phase 2 investment is committed.</div>
+        </div>
+      </div>
+      <div class="opp-item">
+        <div class="opp-n-col" style="min-width:2.5rem"><div class="opp-n" style="background:var(--red-lt);color:var(--red)">!</div></div>
+        <div class="opp-body">
+          <div class="opp-t">AI generation quality in vernacular languages is uneven</div>
+          <div class="opp-d">Hindi and Tamil prompts for business contexts are meaningfully weaker in current LLMs than English equivalents. Prompt-to-storefront quality in vernacular requires either fine-tuning on India SME data or careful prompt engineering with human-in-the-loop review for the first cohort. Shipping a poor vernacular experience is worse than not shipping it — it validates the perception that AI tools are not built for Indian businesses.</div>
+        </div>
+      </div>
+      <div class="opp-item">
+        <div class="opp-n-col" style="min-width:2.5rem"><div class="opp-n" style="background:var(--red-lt);color:var(--red)">!</div></div>
+        <div class="opp-body">
+          <div class="opp-t">SME GTM is a different motion than Razorpay's existing enterprise GTM</div>
+          <div class="opp-d">Razorpay's growth has been driven by developer-led, API-first adoption and enterprise sales. SME storefront adoption requires a different playbook — influencer distribution, regional language marketing, WhatsApp-based onboarding support. This is not a product risk; it is a go-to-market risk that sits outside the product team but will determine whether Phase 2 achieves the activation numbers it needs to justify Phase 3.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- REFERENCES -->
 <div class="block reveal" id="refs">
   <div class="refs">
